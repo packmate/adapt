@@ -225,7 +225,7 @@ Throws a standard `Error` if:
 let local = {}
 try { local = require('./environment.json') } catch {}
 
-const adapt = require('@jrh-works/adapt')({
+module.exports = require('@jrh-works/adapt')({
   configuration: require('./adapt.json'),
 
   environment: {
